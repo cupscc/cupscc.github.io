@@ -4,11 +4,60 @@
   
   
   <entry>
+    <title>学习opengl过程记录</title>
+    <link href="/2022/10/19/%E5%AD%A6%E4%B9%A0opengl%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/"/>
+    <url>/2022/10/19/%E5%AD%A6%E4%B9%A0opengl%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/</url>
+    
+    <content type="html"><![CDATA[<p>实验课的作业是使用Opengl完成图形操作，这里进行记录</p><p>为了 找到对应版本的api,需要知道我们使用的opengl版本，查看opengl 版本</p><p>可以使用 glGetString(GL_VERSION)</p><p>此过程遇到一个问题，命令行无输出，经过查找才发现原来是opengl的函数似乎不可以在命令行输出，需要在窗口？反正无论如何都要GlutInit()才可以正常使用其他函数。</p><figure><img src="C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20221020022330326.png" alt="image-20221020022330326" /><figcaption aria-hidden="true">image-20221020022330326</figcaption></figure><p>可以看到我的版本是 3.1 后面的mesa猜测是这个东西</p><blockquote><p><a href="https://en.wikipedia.org/wiki/Mesa_(computer_graphics)">Mesa (computer graphics) - Wikipedia</a></p></blockquote><p>opengl的整体框架</p><p>对于一个小白来说需要搞定一个框架的整体结构</p><p>一般来说包含如下几个部件</p><p>gl glu glut glew 这里贴两个链接，很好的解释了各个部分的关系,同时有一个链接解释了其他sub important的组件</p><blockquote><p><a href="https://topic.alibabacloud.com/a/opengl-road-i-the-difference-between-opengl-gl-glu-glut--glut-environment-construction_8_8_10243984.html">OpenGL Road (i) the difference between OpenGL, GL, Glu, glut + glut environment construction (alibabacloud.com)</a></p><p><a href="https://gamedev.stackexchange.com/questions/112182/what-is-glew-and-how-does-it-work">opengl - What is GLEW and how does it work? - Game Development Stack Exchange</a></p><p><a href="https://softwareengineering.stackexchange.com/questions/164997/what-is-the-relationship-between-opengl-glx-dri-and-mesa3d">linux - What is the relationship between OpenGL, GLX, DRI, and Mesa3D? - Software Engineering Stack Exchange</a></p><p><a href="https://en.wikipedia.org/wiki/OpenGL_Shading_Language">OpenGL Shading Language - Wikipedia</a></p></blockquote><p>经过查阅发现opengl3.x版本以上和opengl2.x版本相差较大，并且3.x版本学习需要的先前知识更多，而且由于是linux开发环境，配置较麻烦，鉴于这是个普通的课程作业，我先选择了2.x版本的构造（毕竟虽然我的版本是3.1的但是好像是兼容2.x的API的）</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Python中的C扩展</title>
+    <link href="/2022/10/15/Python%E4%B8%AD%E7%9A%84C%E6%89%A9%E5%B1%95/"/>
+    <url>/2022/10/15/Python%E4%B8%AD%E7%9A%84C%E6%89%A9%E5%B1%95/</url>
+    
+    <content type="html"><![CDATA[<p>在网上查询python怎么创建自定义包的时候遇到了这个知识，感觉挺有用的，这里记录一下。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Language</category>
+      
+      <category>Python</category>
+      
+      <category>C</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>网站构建历程</title>
+    <link href="/2022/05/11/%E7%BD%91%E7%AB%99%E6%9E%84%E5%BB%BA%E5%8E%86%E7%A8%8B/"/>
+    <url>/2022/05/11/%E7%BD%91%E7%AB%99%E6%9E%84%E5%BB%BA%E5%8E%86%E7%A8%8B/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>做生活的多栖艺人</title>
     <link href="/2022/05/02/%E5%81%9A%E7%94%9F%E6%B4%BB%E7%9A%84%E5%A4%9A%E6%A0%96%E8%89%BA%E4%BA%BA/"/>
     <url>/2022/05/02/%E5%81%9A%E7%94%9F%E6%B4%BB%E7%9A%84%E5%A4%9A%E6%A0%96%E8%89%BA%E4%BA%BA/</url>
     
-    <content type="html"><![CDATA[<h1 id="做生活的多栖艺人"><a href="#做生活的多栖艺人" class="headerlink" title="做生活的多栖艺人"></a>做生活的多栖艺人</h1><p>我除了学习想坚持的东西都记录在这里</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="做生活的多栖艺人">做生活的多栖艺人</h1><p>我除了学习想坚持的东西都记录在这里</p>]]></content>
     
     
     
@@ -21,7 +70,7 @@
     <link href="/2022/04/10/%E8%AE%A9%E6%88%91%E5%BC%80%E5%BF%83%E7%9A%84%E4%BA%8B/"/>
     <url>/2022/04/10/%E8%AE%A9%E6%88%91%E5%BC%80%E5%BF%83%E7%9A%84%E4%BA%8B/</url>
     
-    <content type="html"><![CDATA[<h1 id="杂记"><a href="#杂记" class="headerlink" title="杂记"></a>杂记</h1><p>&#x3D;&#x3D;现在很难，很不想学习，很不想坚持一件事，如果坚持了，那么结果就会不一样吧。。。有一天会变得更快乐的吧。&#x3D;&#x3D;</p><p>人生是一场穷游，不是一辈子都能开心快乐。但是我想在有限的时间内尽量做个快乐的人。</p><h2 id="正题"><a href="#正题" class="headerlink" title="正题"></a>正题</h2><p>不开心的时候很多，很早就想记录下来这些可以让我开心的事情，但是苦于一直没有一个很好的地方。</p><p>这种东西如果不是用心写在一个用心的地方，那么一般都是不会在意的。</p><p>只有用心的写下来，每次伤心难过情绪压抑 不想学习 想用打游戏 刷视频来逃避的时候，才能起到很好的作用</p><ul><li>注意一下是哪里不舒服</li></ul><p>1.温度太高或者太低 是的话就补充衣服脱衣服<br>2.湿度太高或者太低<br>3.没有充分喝水<br>4.空腹状态过长导致糖分下降（所以糖充电很重要！🍬） 多吃糖<br>5.长时间维持不良姿态，没有伸展，肌肉酸痛<br>6.逆流性食管炎<br>7.家里灰尘太多<br>8.睡眠不足（多数情况下睡饱了心情也就好了）<br>9.杂粮、水果、蔬菜吃得少了（没有食材的话用营养剂补充也可以）<br>10.激素变化（类似月经症候群会影响心情）<br>11.血液循环不畅（这时可以喝点热茶）<br>12.因为显示器高度、字体大小、椅子不舒服等工作环境或姿势问题导致乌龟脖严重（长期可引起肌肉疼痛或呼吸困难）<br>13.接触的阳光 日照不够 </p><p>抑郁、低落通常被认为是心理问题，但是身体健康的影响也很大。没有力气、行动困难，感到焦躁的时候，只是放松身体也会有意外好的效果。</p><p>尽量在舒适的空间里活动、学习、工作吧，这个清单是希望大家在能力范围内尽量创造对自己更友好的环境。这样心情也会好一些。 </p><p>把解决问题的过程改成一个简单的行动。比如觉得自己状态不太好就先从喝一杯水开始，这样可能大脑会更好接受指令去完成。</p><ul><li>看一集哆啦A梦</li></ul><p>哆啦A梦是我小时候最喜欢看的动画片，因为喜欢看，所以小的时候经常会在电视前坐到十点钟等着看动漫世界。</p><p>现在长大了也经常会幻想自己可以有一个哆啦A梦陪着自己。</p><p>看哆啦A梦属实是一件美事，只不过看的零零散散，B站的视频都不全。</p><ul><li><p>去健身房大汗淋漓</p></li><li><p>找好朋友出门去公园玩 去买衣服 逛商场</p></li><li><p>吃一顿好吃的</p></li><li><p>看情爱小说</p></li><li><p>洗干净自拍</p></li><li><p>看海贼漫画，准备补完</p></li><li><p>立刻开始学习，获得满足感，进入状态</p></li><li><p>准备听一些经典的专辑，希望以后有钱买实体专辑</p></li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="杂记">杂记</h1><p>==现在很难，很不想学习，很不想坚持一件事，如果坚持了，那么结果就会不一样吧。。。有一天会变得更快乐的吧。==</p><p>人生是一场穷游，不是一辈子都能开心快乐。但是我想在有限的时间内尽量做个快乐的人。</p><h2 id="正题">正题</h2><p>不开心的时候很多，很早就想记录下来这些可以让我开心的事情，但是苦于一直没有一个很好的地方。</p><p>这种东西如果不是用心写在一个用心的地方，那么一般都是不会在意的。</p><p>只有用心的写下来，每次伤心难过情绪压抑 不想学习 想用打游戏 刷视频来逃避的时候，才能起到很好的作用</p><ul><li>注意一下是哪里不舒服</li></ul><p>1.温度太高或者太低 是的话就补充衣服脱衣服 2.湿度太高或者太低 3.没有充分喝水 4.空腹状态过长导致糖分下降（所以糖充电很重要！🍬） 多吃糖 5.长时间维持不良姿态，没有伸展，肌肉酸痛 6.逆流性食管炎 7.家里灰尘太多 8.睡眠不足（多数情况下睡饱了心情也就好了） 9.杂粮、水果、蔬菜吃得少了（没有食材的话用营养剂补充也可以） 10.激素变化（类似月经症候群会影响心情） 11.血液循环不畅（这时可以喝点热茶） 12.因为显示器高度、字体大小、椅子不舒服等工作环境或姿势问题导致乌龟脖严重（长期可引起肌肉疼痛或呼吸困难） 13.接触的阳光 日照不够</p><p>抑郁、低落通常被认为是心理问题，但是身体健康的影响也很大。没有力气、行动困难，感到焦躁的时候，只是放松身体也会有意外好的效果。</p><p>尽量在舒适的空间里活动、学习、工作吧，这个清单是希望大家在能力范围内尽量创造对自己更友好的环境。这样心情也会好一些。</p><p>把解决问题的过程改成一个简单的行动。比如觉得自己状态不太好就先从喝一杯水开始，这样可能大脑会更好接受指令去完成。</p><ul><li>看一集哆啦A梦</li></ul><p>哆啦A梦是我小时候最喜欢看的动画片，因为喜欢看，所以小的时候经常会在电视前坐到十点钟等着看动漫世界。</p><p>现在长大了也经常会幻想自己可以有一个哆啦A梦陪着自己。</p><p>看哆啦A梦属实是一件美事，只不过看的零零散散，B站的视频都不全。</p><ul><li><p>去健身房大汗淋漓</p></li><li><p>找好朋友出门去公园玩 去买衣服 逛商场</p></li><li><p>吃一顿好吃的</p></li><li><p>看情爱小说</p></li><li><p>洗干净自拍</p></li><li><p>看海贼漫画，准备补完</p></li><li><p>立刻开始学习，获得满足感，进入状态</p></li><li><p>准备听一些经典的专辑，希望以后有钱买实体专辑</p></li></ul>]]></content>
     
     
     
@@ -34,7 +83,7 @@
     <link href="/2022/04/10/hello-world/"/>
     <url>/2022/04/10/hello-world/</url>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="quick-start">Quick Start</h2><p><span class="math display">\[E = Mc^2\]</span></p><h3 id="create-a-new-post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="run-server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="generate-static-files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="deploy-to-remote-sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
     
     
     
