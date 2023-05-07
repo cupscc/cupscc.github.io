@@ -16,22 +16,20 @@
   <meta name="author" content="Lulu">
   <meta name="keywords" content="">
   
-    <meta name="description" content="12git remote -v 可以列出来所有的本地连接到的远程仓库(一个仓库会列两条)git remote add [shortname] [url] 可以连接到一个远程仓库（可以连接多个，一般来说shortname会被叫做origin,url最好用ssh,http经常会忽然连不上去） 12git pull &lt;远程主机名&gt; &lt;远程分支&gt;:&lt;本地分支&gt; （如果">
+    <meta name="description" content="我在git pull时遇到了两种问题，分别是  hint: Updates were rejected because the tip of your current branch is behind  以及  hint: Updates were rejected because remote contains the work...  第一种直接强制push就可以，第二种需要先">
 <meta property="og:type" content="article">
-<meta property="og:title" content="使用git时遇到的问题记录">
-<meta property="og:url" content="https://cupscc.github.io/2022/10/19/%E4%BD%BF%E7%94%A8git%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/index.html">
+<meta property="og:title" content="使用Git的问题记录">
+<meta property="og:url" content="https://cupscc.github.io/2023/05/04/%E4%BD%BF%E7%94%A8git%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/index.html">
 <meta property="og:site_name" content="Learning Lu">
-<meta property="og:description" content="12git remote -v 可以列出来所有的本地连接到的远程仓库(一个仓库会列两条)git remote add [shortname] [url] 可以连接到一个远程仓库（可以连接多个，一般来说shortname会被叫做origin,url最好用ssh,http经常会忽然连不上去） 12git pull &lt;远程主机名&gt; &lt;远程分支&gt;:&lt;本地分支&gt; （如果">
+<meta property="og:description" content="我在git pull时遇到了两种问题，分别是  hint: Updates were rejected because the tip of your current branch is behind  以及  hint: Updates were rejected because remote contains the work...  第一种直接强制push就可以，第二种需要先">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="c:/Users/DELL/AppData/Roaming/Typora/typora-user-images/image-20230325235323642.png">
-<meta property="article:published_time" content="2022-10-19T10:57:29.000Z">
-<meta property="article:modified_time" content="2023-05-07T14:04:54.159Z">
+<meta property="article:published_time" content="2023-05-03T16:09:27.000Z">
+<meta property="article:modified_time" content="2023-05-07T15:47:48.300Z">
 <meta property="article:author" content="Lulu">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="c:/Users/DELL/AppData/Roaming/Typora/typora-user-images/image-20230325235323642.png">
   
   
-  <title>使用git时遇到的问题记录 - Learning Lu</title>
+  <title>使用Git的问题记录 - Learning Lu</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
@@ -189,7 +187,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="使用git时遇到的问题记录">
+            <span class="h2" id="subtitle" title="使用Git的问题记录">
               
             </span>
 
@@ -199,8 +197,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2022-10-19 18:57" pubdate>
-        2022年10月19日 晚上
+      <time datetime="2023-05-04 00:09" pubdate>
+        2023年5月4日 凌晨
       </time>
     </span>
   
@@ -210,7 +208,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      531 字
+      541 字
     </span>
   
 
@@ -248,20 +246,21 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">使用git时遇到的问题记录</h1>
+            <h1 style="display: none">使用Git的问题记录</h1>
             
             <div class="markdown-body">
-              <figure class="highlight scss"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><pre><code class="hljs scss">git remote -v 可以列出来所有的本地连接到的远程仓库(一个仓库会列两条)<br>git remote add <span class="hljs-selector-attr">[shortname]</span> <span class="hljs-selector-attr">[url]</span> 可以连接到一个远程仓库（可以连接多个，一般来说shortname会被叫做origin,url最好用ssh,http经常会忽然连不上去）<br></code></pre></td></tr></table></figure>
-<figure class="highlight bnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bnf">git pull <span class="hljs-attribute">&lt;远程主机名&gt;</span> <span class="hljs-attribute">&lt;远程分支&gt;</span>:<span class="hljs-attribute">&lt;本地分支&gt;</span> （如果没写：后面的内容，本地也没有和远程同名的分支，会创建一个和远程同名的分支）<br>git push <span class="hljs-attribute">&lt;远程主机名&gt;</span> <span class="hljs-attribute">&lt;本地分支&gt;</span>:<span class="hljs-attribute">&lt;远程分支&gt;</span> （同上）<br></code></pre></td></tr></table></figure>
-<figure>
-<img src="C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20230325235323642.png" srcset="/img/loading.gif" lazyload alt="image-20230325235323642" /><figcaption aria-hidden="true">image-20230325235323642</figcaption>
-</figure>
-<p>我在git pull时遇到了两种问题，分别是</p>
-<h4 id="hint-updates-were-rejected-because-the-tip-of-your-current-branch-is-behind">hint: Updates were rejected because the tip of your current branch is behind</h4>
+              <p>我在git pull时遇到了两种问题，分别是</p>
+<blockquote>
+<p>hint: Updates were rejected because the tip of your current branch is behind</p>
+</blockquote>
 <p>以及</p>
+<blockquote>
 <p>hint: Updates were rejected because remote contains the work...</p>
+</blockquote>
 <p>第一种直接强制push就可以，第二种需要先pull下来。</p>
-<p>我在创建仓库的时候，发现没有自动创建分支，而是在第一次commit之后自动创建了一个分支（目前我还不清楚是main还是master）</p>
+<p>我在创建仓库的时候，发现没有自动创建分支，而是在第一次commit之后自动创建了一个分支（目前我还不清楚是main还是master）现在新建的仓库一般都是main作为，之前是master作为主分支。</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><pre><code class="hljs scss">git remote -v 可以列出来所有的本地连接到的远程仓库(一个仓库会列两条)<br>git remote add <span class="hljs-selector-attr">[shortname]</span> <span class="hljs-selector-attr">[url]</span> 可以连接到一个远程仓库（可以连接多个，一般来说shortname会被叫做origin,url最好用ssh,http经常会忽然连不上去）<br></code></pre></td></tr></table></figure>
+<figure class="highlight bnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bnf">git pull <span class="hljs-attribute">&lt;远程主机名&gt;</span> <span class="hljs-attribute">&lt;远程分支&gt;</span>:<span class="hljs-attribute">&lt;本地分支&gt;</span> （如果没写：后面的内容，本地也没有和远程同名的分支，会创建一个和远程同名的分支）<br>git push <span class="hljs-attribute">&lt;远程主机名&gt;</span> <span class="hljs-attribute">&lt;本地分支&gt;</span>:<span class="hljs-attribute">&lt;远程分支&gt;</span> （同上）<br></code></pre></td></tr></table></figure>
 
             </div>
             <hr>

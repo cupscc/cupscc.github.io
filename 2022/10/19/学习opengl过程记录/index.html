@@ -16,19 +16,17 @@
   <meta name="author" content="Lulu">
   <meta name="keywords" content="">
   
-    <meta name="description" content="实验课的作业是使用Opengl完成图形操作，这里进行记录 为了 找到对应版本的api,需要知道我们使用的opengl版本，查看opengl 版本 可以使用 glGetString(GL_VERSION) 此过程遇到一个问题，命令行无输出，经过查找才发现原来是opengl的函数似乎不可以在命令行输出，需要在窗口？反正无论如何都要GlutInit()才可以正常使用其他函数。  image-2">
+    <meta name="description" content="实验课的作业是使用Opengl完成图形操作，这里进行记录 为了 找到对应版本的api,需要知道我们使用的opengl版本，查看opengl 版本 可以在程序中使用语句  glGetString(GL_VERSION)  如果单独执行该语句命令行无输出，原因可能为没有在编程中使用GlutInit()，这是因为opengl的函数如果需要正常运行需要先初始化窗口。 可以看到我的版本是 3.1">
 <meta property="og:type" content="article">
 <meta property="og:title" content="学习opengl过程记录">
 <meta property="og:url" content="https://cupscc.github.io/2022/10/19/%E5%AD%A6%E4%B9%A0opengl%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/index.html">
 <meta property="og:site_name" content="Learning Lu">
-<meta property="og:description" content="实验课的作业是使用Opengl完成图形操作，这里进行记录 为了 找到对应版本的api,需要知道我们使用的opengl版本，查看opengl 版本 可以使用 glGetString(GL_VERSION) 此过程遇到一个问题，命令行无输出，经过查找才发现原来是opengl的函数似乎不可以在命令行输出，需要在窗口？反正无论如何都要GlutInit()才可以正常使用其他函数。  image-2">
+<meta property="og:description" content="实验课的作业是使用Opengl完成图形操作，这里进行记录 为了 找到对应版本的api,需要知道我们使用的opengl版本，查看opengl 版本 可以在程序中使用语句  glGetString(GL_VERSION)  如果单独执行该语句命令行无输出，原因可能为没有在编程中使用GlutInit()，这是因为opengl的函数如果需要正常运行需要先初始化窗口。 可以看到我的版本是 3.1">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="c:/Users/DELL/AppData/Roaming/Typora/typora-user-images/image-20221020022330326.png">
 <meta property="article:published_time" content="2022-10-19T10:57:29.000Z">
-<meta property="article:modified_time" content="2022-10-21T14:11:30.603Z">
+<meta property="article:modified_time" content="2023-05-03T16:47:25.000Z">
 <meta property="article:author" content="Lulu">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="c:/Users/DELL/AppData/Roaming/Typora/typora-user-images/image-20221020022330326.png">
   
   
   <title>学习opengl过程记录 - Learning Lu</title>
@@ -210,7 +208,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      782 字
+      778 字
     </span>
   
 
@@ -251,21 +249,16 @@
             <h1 style="display: none">学习opengl过程记录</h1>
             
             <div class="markdown-body">
-              <p>实验课的作业是使用Opengl完成图形操作，这里进行记录</p>
-<p>为了 找到对应版本的api,需要知道我们使用的opengl版本，查看opengl 版本</p>
-<p>可以使用 glGetString(GL_VERSION)</p>
-<p>此过程遇到一个问题，命令行无输出，经过查找才发现原来是opengl的函数似乎不可以在命令行输出，需要在窗口？反正无论如何都要GlutInit()才可以正常使用其他函数。</p>
-<figure>
-<img src="C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20221020022330326.png" srcset="/img/loading.gif" lazyload alt="image-20221020022330326" /><figcaption aria-hidden="true">image-20221020022330326</figcaption>
-</figure>
+              <p>实验课的作业是使用Opengl完成图形操作，这里进行记录 为了 找到对应版本的api,需要知道我们使用的opengl版本，查看opengl 版本 可以在程序中使用语句</p>
+<blockquote>
+<p>glGetString(GL_VERSION)</p>
+</blockquote>
+<p>如果单独执行该语句命令行无输出，原因可能为没有在编程中使用GlutInit()，这是因为opengl的函数如果需要正常运行需要先初始化窗口。</p>
 <p>可以看到我的版本是 3.1 后面的mesa猜测是这个东西</p>
 <blockquote>
 <p><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Mesa_(computer_graphics)">Mesa (computer graphics) - Wikipedia</a></p>
 </blockquote>
-<p>opengl的整体框架</p>
-<p>对于一个小白来说需要搞定一个框架的整体结构</p>
-<p>一般来说包含如下几个部件</p>
-<p>gl glu glut glew 这里贴两个链接，很好的解释了各个部分的关系,同时有一个链接解释了其他sub important的组件</p>
+<p>对于一个小白来说在学习一个工具库的之前应该搞明白其文件功能是如何组织的。 对于3.0版本之前的OpenGL来说，一般包含如下几个文件 gl glu glut glew 这里贴两个链接，很好的解释了各个部分的关系,同时有一个链接解释了其他O penGL3.x版本之后的文件组织形式。</p>
 <blockquote>
 <p><a target="_blank" rel="noopener" href="https://topic.alibabacloud.com/a/opengl-road-i-the-difference-between-opengl-gl-glu-glut--glut-environment-construction_8_8_10243984.html">OpenGL Road (i) the difference between OpenGL, GL, Glu, glut + glut environment construction (alibabacloud.com)</a></p>
 <p><a target="_blank" rel="noopener" href="https://gamedev.stackexchange.com/questions/112182/what-is-glew-and-how-does-it-work">opengl - What is GLEW and how does it work? - Game Development Stack Exchange</a></p>
@@ -293,15 +286,21 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/10/19/%E4%BD%BF%E7%94%A8git%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/">
+                      <a href="/2023/05/04/%E4%BD%BF%E7%94%A8git%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">使用git时遇到的问题记录</span>
+                        <span class="hidden-mobile">使用Git的问题记录</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/2022/05/11/%E7%BD%91%E7%AB%99%E6%9E%84%E5%BB%BA%E5%8E%86%E7%A8%8B/">
+                        <span class="hidden-mobile">网站构建历程</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>
